@@ -1,6 +1,6 @@
-#include <iostream>
-using namespace std;
+#include <vector>
 
+#include "Facultate.h"
 //class Figura
 //{
 //protected:
@@ -14,56 +14,18 @@ using namespace std;
 //};
 
 
-class Facultate
-{
-public:
-	Facultate()
-	{
-		cout << "Constructor default";
-	}
 
-	Facultate(const string& numeFaculate)
-	{
-		cout << "Constructor cu parametru" << endl;
-		nume = numeFaculate;
-	}
-
-	Facultate(const Facultate& altaFacultate)
-		//: nume(facultate.nume)
-	{
-		nume = altaFacultate.nume;
-		cout << "Constructor de copiere" << endl;
-	}
-
-	Facultate& operator=(const Facultate& altaFacultate)
-	{
-		cout << "Supraincarcare operator=" << endl;
-		nume = altaFacultate.nume;
-		return *this;
-	}
-
-	void setNume(string numeFaculate)
-	{
-		nume = numeFaculate;
-	}
-
-	string getNume()
-	{
-		return nume;
-	}
-public:
-
-	string nume;
-
-};
 
 int main()
 {
-	Facultate facultate1("FMI");
-	Facultate facultate2(facultate1);
+	Facultate facultate2;
+	Facultate facultate1("FMI", "Bucuresti");
 
 
-	facultate2 = facultate1;
+	//Facultate facultate2("Istorie");
+
+	//cout << facultate1;
+	//facultate2 = facultate1;
 	//cout << facultate2.getNume();
 	/*cout << facultate1.getNume();
 	facultate1.setNume("Istorie");
