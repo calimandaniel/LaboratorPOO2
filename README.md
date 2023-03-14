@@ -1,4 +1,4 @@
-# LaboratorPOO2
+# LaboratorPOO
 
 ## Tema 0
     Nume proiect (poate fi schimbat ulterior)
