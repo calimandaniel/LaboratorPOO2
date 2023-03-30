@@ -1,40 +1,41 @@
-#include <vector>
+﻿#include <iostream>
 
-#include "Facultate.h"
-//class Figura
-//{
-//protected:
-//	int aux=5;
-//};
-//
-//class Dreptunghi : public Figura
-//{
-//private:
-//	int var2 = aux;
-//};
+class Baza {
+private:
 
+   
+protected:
+    int x=7;
+    int y=6;
+    
+public:
+    int z=4;
+    void f1() { std::cout << "f1\n"; }
+    void f3() { std::cout << "f3\n"; }
+    void f2() { std::cout << "f2\n"; }
+};
 
+class Derivata : private Baza {
+public:
+    void g() {
+        f1();
+        f2();
+        f3();
+        std::cout << x << "\n";
+        std::cout << y << "\n";
+        std::cout << z << "\n";
+    }
+};
 
-
-int main()
-{
-	Facultate facultate2;
-	Facultate facultate1("FMI", "Bucuresti");
-
-
-	//Facultate facultate2("Istorie");
-
-	//cout << facultate1;
-	//facultate2 = facultate1;
-	//cout << facultate2.getNume();
-	/*cout << facultate1.getNume();
-	facultate1.setNume("Istorie");
-	cout << facultate1.getNume();*/
-
-	//cout << facultate1.nume;
-	//Figura figura1;
-	//figura1.aux;
-	//facultate1.var;
-	//cout << "Laborator";
-	return 0;
+int main() {
+    Baza b;
+    b.f1();
+    b.f2();
+    b.f3();
+    std::cout << "---\n";
+    Derivata d;
+    d.g();
+    /*d.f1();
+    d.f2();
+    d.f3();*/
 }
