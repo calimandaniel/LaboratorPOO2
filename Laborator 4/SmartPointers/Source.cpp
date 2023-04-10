@@ -72,10 +72,9 @@ public:
 };
 
 int main() {
-    //std::unique_ptr<MyClass> ptr = std::make_unique<MyClass>();
+    std::unique_ptr<MyClass> ptr1 = std::make_unique<MyClass>();
     //std::unique_ptr<MyClass> ptr23(new MyClass());
     //ptr->sayHello();
-    std::unique_ptr<MyClass> ptr1 = std::make_unique<MyDerived>();
     std::unique_ptr<MyClass> ptr2 = std::move(ptr1);
 
     
