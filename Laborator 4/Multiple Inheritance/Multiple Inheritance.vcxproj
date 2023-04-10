@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{aa7c2121-7d5a-4e8b-89bd-84a75f9aa774}</ProjectGuid>
-    <RootNamespace>InterfataNonVirtuala</RootNamespace>
+    <ProjectGuid>{25723730-2a56-41bb-838e-d498a0334be6}</ProjectGuid>
+    <RootNamespace>MultipleInheritance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
