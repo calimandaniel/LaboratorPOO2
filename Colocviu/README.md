@@ -1,5 +1,4 @@
 Câteva sfaturi pentru colocviu
-- cerintele vor fi asemenatoare cu ce am facut la laboratoare. Daca v-ati facut toate temele si ati fost atenti la laborator, nu ar trebui sa aveti probleme sa luati 10.
 - cel mai important este să trimiteți un cod în **C++** care **compilează**
 - **fără goto!**
 - **fără `#define N 5`! folosiți `const int N = 5`**
