@@ -21,7 +21,6 @@ int main() {
     std::unique_ptr<Base> b = std::make_unique<AnotherDerived>();
 
     //Derived* d = dynamic_cast<Derived*>(b.get());
-
     //if (d != nullptr) {
     //    std::cout << "Dynamic casting successful." << std::endl;
     //    d->print(); 
@@ -46,7 +45,7 @@ int main() {
     
     std::shared_ptr<Base> sb = std::make_shared<Derived>();
 
-    std::shared_ptr<Derived> sd = std::dynamic_pointer_cast<Derived>(sb);
+   /* std::shared_ptr<Derived> sd = std::dynamic_pointer_cast<Derived>(sb);
 
     if (sd != nullptr) {
         std::cout << "Dynamic casting successful." << std::endl;
@@ -54,7 +53,7 @@ int main() {
     }
     else {
         std::cout << "Dynamic casting failed." << std::endl;
-    }
+    }*/
 
     return 0;
 }
