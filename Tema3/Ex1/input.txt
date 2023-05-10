@@ -1,0 +1,21 @@
+20
+0 apple
+1 banana
+2 orange
+3 grape
+4 kiwi
+5 peach
+6 mango
+7 pineapple
+8 watermelon
+9 strawberry
+10 dog
+11 cat
+12 bird
+13 fish
+14 pizza
+15 burger
+16 tacos
+17 hotdog
+18 hamburger
+19 computer
